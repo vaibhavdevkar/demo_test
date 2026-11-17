@@ -12,7 +12,7 @@ mongoose.connect('mongodb://127.0.0.1:27017/test')
   .then(() => console.log('Connected!'));
 
 
-const PORT = 5000
+const PORT = 4000
 
 app.get("/api/user", (req, res) => {
   res.status(200).json({
@@ -35,6 +35,12 @@ app.post("/api/user", (req, res) => {
   });
 });
 
+
+function login() {
+  console.log("Login feature developed");
+}
+
+login();
 
 app.listen(PORT, () => {
   console.log(`Server running on ${PORT}`);
