@@ -39,8 +39,13 @@ app.post("/api/user", (req, res) => {
 function login() {
   console.log("Login feature developed");
 }
-
 login();
+
+function register() {
+  console.log("Register feature developed");
+} 
+
+register();
 
 app.listen(PORT, () => {
   console.log(`Server running on ${PORT}`);
